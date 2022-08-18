@@ -22,7 +22,7 @@ Simply clone the repository, then run `docker-compose up -d` to create 2 images 
 
 The Dockerfile automatically runs `npm install` command which should generate `node_modules` directory with all necessary node packages.
 
-The file `src/index.js` includes a simple HTTP server implemented using NodeJS and Express, which exposes 5 endpoints on 5 different localhost URLS in order to accomplish pagination.
+The file `src/index.ts` includes a simple HTTP server implemented using NodeJS and Express, which exposes 5 endpoints on 5 different localhost URLS in order to accomplish pagination.
 
 After the command finishes setting up the images and containers, you can view the scraped ads [here](http://localhost:8080).
 

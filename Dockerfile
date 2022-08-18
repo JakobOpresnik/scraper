@@ -55,3 +55,23 @@ CMD [ "npm", "start" ]
 # example --> docker run -p 8080:8080
 #
 #
+#
+#=========================
+# DOCKER COMPOSE COMMANDS
+#=========================
+#
+# generate images & containers --> docker-compose up -d
+#
+# stop containers -> docker-compose down
+#
+#
+#
+#==============
+# GIT COMMANDS
+#==============
+#
+# set email --> git config --global user.email <your_email>
+#
+# set username --> git config --global user.name <your_username>
+#
+#
