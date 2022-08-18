@@ -1,0 +1,27 @@
+version: '3.8'
+services:
+  db:
+    image: postgres
+    container_name: postgres_db
+    restart: always
+    environment:
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mypassword
+      POSTGRES_DB: mydb
+    volumes:
+       - ./data:/var/lib/postgresql/data
+    ports:
+       - '5432:5432'
+  web:
+    build: .
+    image: scraper
+    container_name: web_scraper
+    environment:
+      DB_HOST: postgres
+      DB_NAME: mydb
+      DB_USER: myuser
+      DB_PORT: 5432
+    depends_on:
+      - db
+    ports:
+      - '8080:8080'
