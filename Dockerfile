@@ -62,7 +62,9 @@ CMD [ "npm", "start" ]
 #
 # generate images & containers --> docker-compose up -d
 #
-# stop containers -> docker-compose down
+# stop containers --> docker-compose down
+#
+# remove images --> docker rmi <image>
 #
 #
 #
